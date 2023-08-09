@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omid Khan - Software Engineer Portfolio</title>
     <style>
+        /* Your CSS styles go here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -22,27 +23,33 @@
 
         nav {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             background-color: #81C784; /* Lighter Green */
-            padding: 0.5rem 0;
+            padding: 1rem 0;
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 1rem;
-            transition: color 0.3s, transform 0.3s; /* Added transform transition */
+            margin: 0.5rem;
+            transition: color 0.3s, transform 0.3s;
         }
 
         nav a:hover {
             color: #00aaff;
-            transform: scale(1.1); /* Hover animation: scale up */
+            transform: scale(1.1);
         }
 
         .container {
             max-width: 1200px;
             margin: 2rem auto;
             padding: 0 1rem;
+            padding-left: 220px; /* Add space for the side navigation */
         }
 
         .content {
@@ -50,6 +57,7 @@
             padding: 2rem;
             border-radius: 5px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
         }
 
         footer {
@@ -57,19 +65,9 @@
             padding: 1rem 0;
             background-color: #4CAF50; /* Light Green */
             color: white;
-        }
-
-        /* Add styling for contact icons */
-        .contact-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-
-        .contact-icon {
-            width: 20px;
-            margin-right: 8px;
-            vertical-align: middle; /* Align icon vertically with text */
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -79,7 +77,6 @@
     </header>
 
     <nav>
-        <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
@@ -87,6 +84,7 @@
 
     <div class="container">
         <div class="content" id="about">
+            <h2>About Me</h2>
             <!-- ... About Me content ... -->
         </div>
 
@@ -97,19 +95,7 @@
 
         <div class="content" id="contact">
             <h2>Contact Me</h2>
-            <div class="contact-info">
-                <img class="contact-icon" src="phone-icon.png" alt="Phone Icon">
-                <p>Phone: +1234567890</p>
-            </div>
-            <div class="contact-info">
-                <img class="contact-icon" src="email-icon.png" alt="Email Icon">
-                <p>Email: example@example.com</p>
-            </div>
-            <div class="contact-info">
-                <img class="contact-icon" src="linkedin-icon.png" alt="LinkedIn Icon">
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/omid-khan">linkedin.com/in/omid-khan</a></p>
-            </div>
-            <p>Feel free to reach out to me on LinkedIn to connect and discuss potential opportunities, collaborations, or just to have a chat!</p>
+            <!-- ... Contact Me content ... -->
         </div>
     </div>
 
